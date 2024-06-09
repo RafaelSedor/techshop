@@ -9,7 +9,9 @@ services:
       - CHOKIDAR_USEPOLLING=true
     depends_on:
       - backend
-    
+    networks:
+      - techshop-network
+
   backend:
     build:
       context: ./backend
@@ -23,7 +25,9 @@ services:
       - DATABASE_NAME=crud_db
     depends_on:
       - mysql
-    
+    networks:
+      - techshop-network
+
   mysql:
     image: mysql:5.7
     ports:
@@ -33,29 +37,34 @@ services:
       MYSQL_DATABASE: crud_db
     volumes:
       - mysql-data:/var/lib/mysql
-    
+    networks:
+      - techshop-network
+
   grafana:
     image: grafana/grafana
     ports:
       - "3002:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
     depends_on:
       - prometheus
     networks:
-      - monitoring
+      - techshop-network
 
   prometheus:
     image: prom/prometheus
-    ports:
-      - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
     networks:
-      - monitoring
+      - techshop-network
 
 volumes:
   mysql-data:
+  grafana-storage:
 
 networks:
-  monitoring:
+  techshop-network:
 
 # http://techshop.com.br:

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://techshop.com.br:3000/products';
+const API_URL = process.env.REACT_APP_API_URL || 'http://techshop.com.br:3000/products';
 
 function ProductForm({ selectedProduct, onProductUpdate }) {
   const [product, setProduct] = useState({ name: '', price: '', description: '' });
@@ -44,16 +44,16 @@ function ProductForm({ selectedProduct, onProductUpdate }) {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>Name:</label>
-        <input type="text" name="name" value={product.name} onChange={handleChange} required />
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" value={product.name} onChange={handleChange} required />
       </div>
       <div>
-        <label>Price:</label>
-        <input type="number" name="price" value={product.price} onChange={handleChange} required />
+        <label htmlFor="price">Price:</label>
+        <input type="number" id="price" name="price" value={product.price} onChange={handleChange} required />
       </div>
       <div>
-        <label>Description:</label>
-        <input type="text" name="description" value={product.description} onChange={handleChange} />
+        <label htmlFor="description">Description:</label>
+        <input type="text" id="description" name="description" value={product.description} onChange={handleChange} />
       </div>
       <button type="submit">{product.id ? 'Update Product' : 'Add Product'}</button>
     </form>

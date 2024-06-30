@@ -60,6 +60,18 @@ git clone https://github.com/RafaelSedor/techshop.git
 cd techshop
 ```
 
+## Atualização de Hosts no Windows
+
+Para redirecionar `localhost` para `techshop.com.br` no Windows, edite o arquivo hosts:
+
+1. Abra o Notepad como Administrador.
+2. Abra o arquivo `C:\Windows\System32\drivers\etc\hosts`.
+3. Adicione a linha:
+
+```plaintext
+127.0.0.1 techshop.com.br
+```
+
 ### Executando a Aplicação
 
 1. Remova quaisquer contêineres, imagens, volumes e redes antigos:
@@ -93,17 +105,4 @@ Para uma explicação detalhada da aplicação, por favor, assista ao vídeo tut
 Contribuições são bem-vindas! Por favor, abra uma issue ou envie um pull request para quaisquer alterações ou melhorias.
 
 ---
-
-## Atualização de Hosts no Windows
-
-Para redirecionar `localhost` para `techshop.com.br` no Windows, edite o arquivo hosts:
-
-1. Abra o Notepad como Administrador.
-2. Abra o arquivo `C:\Windows\System32\drivers\etc\hosts`.
-3. Adicione a linha:
-
-```plaintext
-127.0.0.1 techshop.com.br
-```
-
 Seguindo as instruções acima, você deve ser capaz de configurar e executar a aplicação TechShop CRUD localmente. Se encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para contribuir ou abrir uma issue no GitHub.

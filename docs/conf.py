@@ -4,8 +4,8 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'TechShop'
-author = 'Seu Nome'
+project = 'RafaelSedor'
+author = 'rafael sedor'
 release = '0.1'
 
 # -- General configuration ---------------------------------------------------

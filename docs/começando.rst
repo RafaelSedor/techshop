@@ -24,7 +24,7 @@ Para redirecionar `localhost` para `techshop.com.br` no Windows, edite o arquivo
 
 1. Abra o Notepad como Administrador.
 
-2. Abra o arquivo `C:\Windows\System32\drivers\etc\hosts`.
+2. Abra o arquivo `C:/Windows/System32/drivers/etc/hosts`.
 
 3. Adicione a linha:
 

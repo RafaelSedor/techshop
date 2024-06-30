@@ -1,13 +1,22 @@
-## Capturas de Tela
+Capturas de Tela
+================
 
-### Página Inicial
-![Página Inicial](../frontend/src/images/home.png)
+Página Inicial
+--------------
 
-### Lista de Produtos
-![Lista de Produtos](../frontend/src/images/product_list.png)
+.. image:: ../frontend/src/images/home.png
 
-### Editar Produto
-![Editar Produto](../frontend/src/images/edit_product.png)
+Lista de Produtos
+-----------------
 
-### Produto Deletado
-![Produto Deletado](../frontend/src/images/product_deleted.png)
+.. image:: ../frontend/src/images/product_list.png
+
+Editar Produto
+--------------
+
+.. image:: ../frontend/src/images/edit_product.png
+
+Produto Deletado
+----------------
+
+.. image:: ../frontend/src/images/product_deleted.png

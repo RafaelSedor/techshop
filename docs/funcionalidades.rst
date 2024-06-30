@@ -1,4 +1,5 @@
-## Funcionalidades
+Funcionalidades
+===============
 
 - Adicionar novos produtos
 - Atualizar produtos existentes

@@ -1,8 +1,3 @@
-.. TechShop documentation master file, created by
-   sphinx-quickstart on Thu Jan 01 00:00:00 1970.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Bem-vindo à documentação do TechShop CRUD
 =========================================
 
@@ -17,10 +12,3 @@ Bem-vindo à documentação do TechShop CRUD
    uso
    video
    contribuindo
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
